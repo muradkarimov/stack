@@ -5,11 +5,506 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9a33a61e91.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <div id="particles-js">
+      <!-- <nav id="nav">
+            <div class="nav-content">
+                <input type="checkbox" id="check">
+                <div class="nav-logo">
+                    <a href="">STACK</a>
+                </div>
+               
+                <ul class="nav-links">
+                    <label for="check" class="button close"><i class="fa-solid fa-xmark"></i></label>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+                <label for="check" class="button open"><i class="fa-solid fa-bars"></i></label>
+            </div>
+      </nav> -->
+      <div class="nav" id="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            STACK
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="#" >Home</a>
+          <a href="#about" >About</a>
+          <a href="#service">Service</a>
+          <a href="#testimonial" >Testimonial</a>
+          <a href="#blog" >Blog</a>
+        </div>
+      </div>
+      <div class="main">
+        <h1>We love to create <strong>Beautiful</strong> websites</h1>
+        <p><a href="">Get in Touch</a></p>
+      </div>
+    </div>
+
+    <button id="btnScrollToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
     
 
+    <div id="about" data-aos="fade-down" data-aos-duration="2000">
+       <div class="d-flex justify-content-center align-items-center">
+        <h1>About</h1>
+       </div>
+       <div class="bg-light" id="hh">
+        <section >
+            <div class="container-fluid">
+                <div class="row mt-5 d-flex justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h2>UI/UX, visual, <strong class="px-3">Web designer</strong> with more than 12 years of experience in designing websites and mobile apps.</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+       </div>
+       <div class="team__container section">
+        <div class="container team__info">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 text-center">
+                    <h2>Our Team</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="block-10">
+                        <div class="team__member__info mb-2">
+                            <p class="name">Jacob Smith</p>
+                            <p class="position"> Co Designer</p>
+                        </div>
+                        <img src="https://catholicphilly.com/media-files/2022/03/Margaret-Andrews-415x415.jpg" alt="" class="img-fluid mb-3">
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="block-10">
+                        <div class="team__member__info mb-2">
+                            <p class="name">Aldin Henderson</p>
+                            <p class="position">Web Developer</p>
+                        </div>
+                        <img src="https://site.sba.nl/wp-content/uploads/2018/07/olgaemelianova-415x415.jpg" alt="" class="img-fluid mb-3">
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="block-10">
+                        <div class="team__member__info mb-2">
+                            <p class="name">Mark Willis</p>
+                            <p class="position">Led Web Developerr</p>
+                        </div>
+                        <img src="https://site.sba.nl/wp-content/uploads/2018/07/sanderbrouwer-415x415.jpg" alt="" class="img-fluid mb-3">
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
 
-    <script src="script.js"></script>
+      
+    </div>
+
+    <div class="section" id="service" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-5">
+              <div class="col-md-6 text-center">
+                  <h1>Our Services</h1>
+                  <h2 class="mb-4">Web & Mobile app design, bring your ideas to life</h2>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-3 col-md-6 d-flex">
+                  <div class="text-center mb-40">
+                      <div class="d-flex justify-content-center">
+                          <div class="icon color-1 d-flex justify-content-center mb-3">
+                              <span>
+                                  <i class="fa-regular fa-lightbulb"></i>
+                              </span>
+                          </div>
+                      </div>
+                      <div class="service__info p-2 mt-3">
+                          <h3>Strategy</h3>
+                          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 d-flex">
+                  <div class="text-center mb-40">
+                      <div class="d-flex justify-content-center">
+                          <div class="icon color-2 d-flex justify-content-center mb-3">
+                              <span>
+                                  <i class="fa-solid fa-laptop"></i>
+                              </span>
+                          </div>
+                      </div>
+                      <div class="service__info p-2 mt-3">
+                          <h3>Design</h3>
+                          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="col-lg-3 col-md-6 d-flex">
+                  <div class="text-center mb-40">
+                      <div class="d-flex justify-content-center">
+                          <div class="icon color-3 d-flex justify-content-center mb-3">
+                              <span>
+                                  <i class="fa-solid fa-gear"></i>
+                              </span>
+                          </div>
+                      </div>
+                      <div class="service__info p-2 mt-3">
+                          <h3>Development</h3>
+                          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="col-lg-3 col-md-6 d-flex">
+                  <div class="text-center mb-40">
+                      <div class="d-flex justify-content-center">
+                          <div class="icon color-4 d-flex justify-content-center mb-3">
+                              <span>
+                                  <i class="fa-solid fa-circle-question"></i>
+                              </span>
+                          </div>
+                      </div>
+                      <div class="service__info p-2 mt-3">
+                          <h3>Help & Supports</h3>
+                          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+     </div>
+
+
+     <div class="section bg-light" id="testimonial" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 text-center">
+                    <h1>Testimonials</h1>
+                    <h2>Our satisfied customer says</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="text-center">
+                                <div class="cart p-4 pb-5">
+                                    <div class="img mb-4">
+                                        <span class="d-flex justify-content-center align-items-center quote">
+                                            <i class="fa-solid fa-quote-left"></i>
+                                        </span>
+                                    </div>
+                                    <div class="info">
+                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                        <p class="name">Dennis Green</p>
+                                        <span class="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="text-center">
+                                <div class="cart p-4 pb-5">
+                                    <div class="img img1 mb-4">
+                                        <span class="d-flex justify-content-center align-items-center quote">
+                                            <i class="fa-solid fa-quote-left"></i>
+                                        </span>
+                                    </div>
+                                    <div class="info">
+                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                        <p class="name">Dennis Green</p>
+                                        <span class="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="text-center">
+                                <div class="cart p-4 pb-5">
+                                    <div class="img img2 mb-4">
+                                        <span class="d-flex justify-content-center align-items-center quote">
+                                            <i class="fa-solid fa-quote-left"></i>
+                                        </span>
+                                    </div>
+                                    <div class="info">
+                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                        <p class="name">Dennis Green</p>
+                                        <span class="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="text-center">
+                                <div class="cart p-4 pb-5">
+                                    <div class="img mb-4">
+                                        <span class="d-flex justify-content-center align-items-center quote">
+                                            <i class="fa-solid fa-quote-left"></i>
+                                        </span>
+                                    </div>
+                                    <div class="info">
+                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                        <p class="name">Dennis Green</p>
+                                        <span class="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="text-center">
+                                <div class="cart p-4 pb-5">
+                                    <div class="img img1 mb-4">
+                                        <span class="d-flex justify-content-center align-items-center quote">
+                                            <i class="fa-solid fa-quote-left"></i>
+                                        </span>
+                                    </div>
+                                    <div class="info">
+                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                        <p class="name">Dennis Green</p>
+                                        <span class="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="text-center">
+                                <div class="cart p-4 pb-5">
+                                    <div class="img img2 mb-4">
+                                        <span class="d-flex justify-content-center align-items-center quote">
+                                            <i class="fa-solid fa-quote-left"></i>
+                                        </span>
+                                    </div>
+                                    <div class="info">
+                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                        <p class="name">Dennis Green</p>
+                                        <span class="position">Marketing Manager</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                       
+
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="section" id="counter" data-aos="zoom-in-right" data-aos-duration="2000">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 text-center">
+                    <h2>Our Achievements</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <div class="number">
+                            <strong class="num" data-val="400">000</strong>
+                            <span>Customers are satisfied with our professional support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <div class="number">
+                            <strong class="num" data-val="1000">000</strong>
+                            <span>Amazing preset options to be mixed and combined</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <div class="number">
+                            <strong class="num" data-val="800">000</strong>
+                            <span>Average response time on live chat support channel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div> 
+
+     <div class="section" id="blog" data-aos="fade-down" data-aos-duration="2000">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 text-center">
+                    <h2>Recent Blogs</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog__container">
+                        <a href="" class="blog__img"></a>
+                        <div class="p-4 d-block blog__info">
+                            <div class="mb-3 blog__date">
+                                <span><a href="">July 12, 2018</a></span>
+                                <span><a href="">Admin</a></span>
+                                <span><a href=""><i class="fa-solid fa-comment"></i>3</a></span>
+                            </div>
+                            <div class="blog__text">
+                                <h3><a href="">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="blog__container">
+                        <a href="" class="blog__img blog__img1"></a>
+                        <div class="p-4 d-block blog__info">
+                            <div class="mb-3 blog__date">
+                                <span><a href="">July 12, 2018</a></span>
+                                <span><a href="">Admin</a></span>
+                                <span><a href=""><i class="fa-solid fa-comment"></i>3</a></span>
+                            </div>
+                            <div class="blog__text">
+                                <h3><a href="">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="blog__container">
+                        <a href="" class="blog__img blog__img2"></a>
+                        <div class="p-4 d-block blog__info">
+                            <div class="mb-3 blog__date">
+                                <span><a href="">July 12, 2018</a></span>
+                                <span><a href="">Admin</a></span>
+                                <span><a href=""><i class="fa-solid fa-comment"></i>3</a></span>
+                            </div>
+                            <div class="blog__text">
+                                <h3><a href="">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <div class="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-3 mb-4">
+                    <h2>Stack</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+                <div class="col-lg-3 mb-4 ml-5">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#" class="py-2">Home</a></li>
+                        <li><a href="#about" class="py-2">About</a></li>
+                        <li><a href="#service" class="py-2">Service</a></li>
+                        <li><a href="#testimonial" class="py-2">Testimonial</a></li>
+                        <li><a href="#blog" class="py-2">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li><a href="">198 West 21th Street, Suite 721 New York NY 10016</a></li>
+                        <li><a href="">+ 1235 2355 98</a></li>
+                        <li><a href="">info@yoursite.com</a></li>
+                        <li><a href="">email@email.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <ul class="d-flex social">
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    
+
+     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+     </script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+   $('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:true,
+    margin:10,
+    center:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        }
+    }
+})
+    </script>
 </body>
 </html>
