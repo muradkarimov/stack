@@ -10,15 +10,7 @@
     position: relative;
     height: 500px;
 }
-/* nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    transition: all 0.4s ease;
-    background-color: transparent;
-} */
+
 .nav {
     height: 50px;
     width: 100%;
@@ -117,114 +109,22 @@
       height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
+      /* height: calc(100vh - 50px); */
+      height: 60vh;
       overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
   }
-.sticky{
-    padding: 15px 20px;
-    background-color: #fff;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
-    z-index: 10;
-}
-.sticky .nav-links a{
-    color: #000;
-}
-.sticky .nav-logo a{
-    color: #000;
-}
-.sticky .button i{
-    color: black;
-}
-/* nav .nav-content{
-    height: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-nav .nav-logo a{
-    font-size: 35px;
-    font-weight: 500;
-    text-decoration: none;
-    color: white;
-}
-.nav-content .nav-links{
-    display: flex;
-    margin: 0px !important;
-}
-.nav-content .nav-links li{
-    list-style: none;
-    margin: 0 8px;
-}
-.nav-links li a{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 10px 4px;
-    transition: all 0.3s ease;
-    color: white;
-}
-.nav-links li a:hover{
-    color: #49c5b6;
-}
 
-nav .button{
-    cursor: pointer;
-    font-size: 18px;
-    display: none;
-}
-nav .button i{
-    color: white;
-}
-nav .close{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    
-}
-#check{
-    display: none;
-}
-@media (max-width:940px){
-    .nav-content ul{
-        display: block !important;
-        position: fixed;
-        top: 0;
-        left: 100%;
-        width: 100%;
-        padding-top: 45px;
-        height: 100%;
-        z-index: 12;
-        transition: all 0.3 ease;
+  @media(max-width:330px){
+    .nav > #nav-check:checked ~ .nav-links{
+        height: 47vh;
     }
-    .nav-content ul a{
-        display: block;
-        font-size: 23px;
-        width: 100%;
-        margin-top: 30px;
-        text-align: center;
-    }
-    nav .nav-logo {
-        text-align: center !important;
-    }
-    nav  .open{
-        display: block !important;
-    }
-    #check:checked ~ label.open{
-        display: none !important;
-    }
-    #check:checked ~ .nav-links .close{
-        display: block !important;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-    #check:checked ~ .main{
-        display: none !important;
-    }
-} */
+  }
+ 
 
 .main{
     position: absolute;
@@ -290,7 +190,7 @@ nav .close{
     margin-bottom: 1.5rem;
     color: #404044;
 }
-.team__container .team__member__info {
+/* .team__container .team__member__info {
     height: 75px;
 }
 .team__container .team__member__info .name{
@@ -306,8 +206,84 @@ nav .close{
 }
 .block-10 img{
     width: 100% !important;
+    cursor: pointer;
+}
+.block-10 img:hover{
+    transform: scale(1.1);
+} */
+.team__container{
+    padding-bottom: 50px !important;
 }
 
+.profile {
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  .profile:hover {
+    transform: translateY(25px);
+  }
+ 
+  .profile img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #f7f7f7;
+    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+    cursor: pointer;
+  }
+
+  .profile:not(:first-child) img {
+    margin-left: -20px;
+  }
+  
+  .profile .name {
+    position: absolute;
+    background-color: #10996d;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    padding: 15px 30px;
+    border-radius: 100px;
+    bottom: -80px; left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50px);
+    letter-spacing: 1px;
+    font-size: 27px;
+    opacity: 0;
+    transition: all 0.3s;
+    
+  }
+  
+  .profile .name::before {
+    content: "";
+    position: absolute;
+    width: 15px; height: 15px;
+    background-color: #10996d;
+    top: 0; left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .profile img:hover + .name {
+    opacity: 1;
+    transform: translateX(-40%);
+    box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+  }
+
+
+  @media(max-width:991px){
+    .profile{
+        margin-bottom: 120px;
+    }
+    .profile4{
+        margin-bottom: 0px !important;
+    }
+  }
+
+  @media(max-width:450px){
+    .profile .name{
+        opacity: 1;
+        bottom: -140px;
+    }
+  }
 .section h2{
     font-size: 38px;
     font-weight: 700;

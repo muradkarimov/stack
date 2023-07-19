@@ -13,11 +13,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 
 
-// const toggleButton = document.getElementsByClassName("toggle-button")[0];
-// const navLinks = document.getElementsByClassName("nav-links")[0];
-// toggleButton.addEventListener('click', ()=>{
-//   navLinks.classList.toggle('active')
-// })
+
 const btnScrollToTop = document.getElementById("btnScrollToTop");
 btnScrollToTop.addEventListener('click', function(){
   window.scrollTo({
@@ -27,18 +23,12 @@ btnScrollToTop.addEventListener('click', function(){
   })
 })
 
-let nav = document.getElementById("nav");
-window.onscroll = function() {
-  if(document.documentElement.scrollTop>400){
-    nav.classList.add("sticky");
-  }
-  else{
-    nav.classList.remove("sticky");
-  }
-}
+
+
+
 
 let valueDisplays = document.querySelectorAll(".num");
-let interval = 6000;
+let interval = 20000;
 
 valueDisplays.forEach((valueDisplay) => {
   let startValue = 0;
